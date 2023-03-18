@@ -16,11 +16,15 @@ while True:
     opcion = input('Ingrese la opcion 1, 2, 3, 4  ')
 #=================Opcion 1 Nombre ==================
     if opcion == "1":
-        nombre = input('Ingrese su nombre   ')
-        if nombre.isalpha():
-            print("Su nombre es:  ", nombre)
-        else:
-            print("Su nombre esta mal digitado  ")
+        while True:
+            nombre = input('Ingrese su nombre:   ')
+            if nombre.isalpha():
+                print("Su nombre es:  ", nombre)
+                break
+            else:
+                print("Su nombre esta mal digitado  ")
+           
+        
 #===================Opcion 2 Edad==================        
     elif opcion == "2":
         edad = input("Ingrese su edad  ")
